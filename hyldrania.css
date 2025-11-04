@@ -1,0 +1,188 @@
+/* Dégradé horizontal */
+body {
+    background: linear-gradient(to right, rgb(209, 209, 3), rgb(229, 4, 4));
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Titres principaux */
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* El_maloque dégradé sur le texte */
+.El_maloque {
+    font-weight: bold;
+    background: linear-gradient(90deg, red, rgb(0, 72, 255), yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+/* Bordures arrondies sur les images */
+img {
+    border-radius: 15px;
+    border-left: 15px solid black;
+    padding-left: 5px;
+    display: block;
+    max-width: 100%;
+}
+
+/* Bannière full screen */
+.full-width-image {
+    width: 100vw;
+    height: auto;
+    border-left: none;
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+    left: -15px;
+}
+
+/* ✅ Textes stylisés */
+.color-text {
+    color: #ffffff;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.justified {
+    text-align: justify;
+}
+.shadow-text {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* ✅ Image transparente */
+.transparente {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+.transparente:hover {
+    opacity: 1;
+}
+
+/* ✅ Encadré avec ombre */
+.shadow-box {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 3px solid #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* ✅ Info-bulle */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* au-dessus de l'image */
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+h1 {
+    font-family: 'Press Start 2P', Pixel Emulator;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin: 30px 0;
+}
+.second-image {
+  transition: opacity 0.3s ease;
+}
+
+.second-image:hover {
+  opacity: 0.5;
+}
+.easter-egg-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.easter-egg-container img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  transition: opacity 0.4s ease;
+}
+
+.easter-egg-container:hover img {
+  opacity: 0.5; /* Rend l'image transparente au survol */
+}
+
+.easter-egg-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 1;
+}
+.easter-egg-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.easter-egg-container img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.easter-egg-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  opacity: 0; /* 👈 Caché par défaut */
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.easter-egg-container:hover .easter-egg-message {
+  opacity: 1; /* 👈 Devient visible au survol */
+}
